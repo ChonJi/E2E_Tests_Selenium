@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: tests.MainPageTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.695 sec <<< FAILURE!
+shouldGoOnMainPage(tests.MainPageTest)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at core.SetUpTests.openMainPage(SetUpTests.java:28)
+	at tests.MainPageTest.shouldGoOnMainPage(MainPageTest.java:10)
+
