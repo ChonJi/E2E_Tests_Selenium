@@ -14,9 +14,7 @@ public class SetUpTests {
     public static WebDriver driver;
 
     @BeforeSuite
-    public void setUpTests() {
-
-
+    protected void setUpTests() {
         switch (propertiesReader.getBrowser()) {
             case "chrome":
                 driver = new ChromeDriver();
@@ -24,7 +22,7 @@ public class SetUpTests {
         }
     }
 
-    public MainPage openMainPage() {
+    protected MainPage openMainPage() {
         driver.get(propertiesReader.getAppUrl());
         driver.manage().window().maximize();
         assertThat(driver.getCurrentUrl()).isEqualTo(propertiesReader.getAppUrl());
@@ -32,7 +30,7 @@ public class SetUpTests {
     }
 
     @AfterSuite
-    public void tearDownDriver() {
+    protected void tearDownDriver() {
         driver.quit();
     }
 }

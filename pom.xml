@@ -10,7 +10,7 @@
 
     <properties>
         <browser>chrome</browser>
-        <appUrl>http://localhost:8000</appUrl>
+        <appUrl>http://localhost:8000/</appUrl>
     </properties>
 
     <dependencies>
